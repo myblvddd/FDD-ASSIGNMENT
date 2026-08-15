@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity Timetable & Schedule</title>
+    <link href="gallery.css" rel="stylesheet"/>
+    <link href="media/logothumbnail.png" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <header>
+        <a href="index.html" id="headermain">
+            <img src="media/logo1.png"/>
+        </a>
+        <nav id="headernav">
+            <a href="events.html">EVENTS</a>
+            <a href="#schedule">SCHEDULE</a>
+            <a href="test2.html">ANNOUNCEMENTS</a>
+            <a href="test2.html">GALLERY</a>
+            <a href="test2.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/whatsapp.png"></a>
+        </nav>
+        <a href="Login.html"><img id="headeruser" src="media/guestpic.png"></a>
+    </header>
+
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h2>LANGKAWI GALLERY    </h2>
+            <p>COME AND ENJOY THE BEAUTIFUL SCENES OF LANGKAWI!</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="beach.jpg" alt="Beautiful Beach in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="camping.jpg" alt="Camping in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="kayaking.jpg" alt="Kayaking in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="" alt="">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

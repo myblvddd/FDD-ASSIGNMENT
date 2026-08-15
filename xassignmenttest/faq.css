@@ -1,22 +1,26 @@
-  * {
+@font-face
+{
+    font-family: NewFont;
+    src: url('fonts/NewFont.ttf') format('truetype');
+}
+
+* {
     box-sizing: border-box;
   }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: NewFont;
     color: #262626;
     display: flex;
     justify-content: center;
     padding: 40px 20px;
     background-color: #ffffff;
   }
-  
-  /* Container sizing */
+
   .faq-container {
     width: 100%;
     max-width: 650px;
   }
 
-  /* Title styling */
   h2 {
     text-align: center;
     font-weight: 300;
@@ -26,7 +30,6 @@
     color: #262626;
   }
 
-  /* Accordion Item Lines */
   .accordion-item {
     border-bottom: 1px solid #e5e5e5;
   }
@@ -34,7 +37,6 @@
     border-top: 1px solid #e5e5e5;
   }
 
-  /* Accordion Button/Header */
   .accordion-header {
     width: 100%;
     background: none;
@@ -50,25 +52,21 @@
     color: #262626;
     transition: color 0.3s ease;
   }
-  
-  /* Matches the blue text seen in the first image on hover/focus */
+
   .accordion-header:hover {
     color: #1c69d4;
   }
 
-  /* Icon transition for the up/down caret */
   .icon {
     transition: transform 0.3s ease;
     font-size: 14px;
     color: inherit;
   }
-  
-  /* Rotates the icon when the item is active (open) */
+
   .accordion-header.active .icon {
     transform: rotate(180deg);
   }
 
-  /* Accordion Content Panel */
   .accordion-content {
     max-height: 0;
     overflow: hidden;
