@@ -26,19 +26,26 @@
     </header>
 
     <div class="backimg"></div>
-    <div class="maincontainer">
+    <div class="maincontainer" id="test1">
         <h1 id="feedbackmain">Give us your feedback!</h1>
         <h2 id="feedbackmain2">Please fill in this form to share your experience with us - your insights are <span id="lol">important</span> for us!</h2><br/>
-        <form id="fbform">
+        <form id="fbform" onsubmit="return false">
             <label>Your Name *</label><br/><br/>
             <input id="fbname" type="text" name="Name" placeholder="" required/><br/><br/>
             <label>email *</label><br/><br/>
             <input id="fbmail" type="email" name="Email" placeholder="email123@mail.com" required/><br/><br/>
             <label>feedback</label><br/><br>
             <textarea id="fbfb" name="Feedback" placeholder="Kindly tell us what you think!"></textarea><br/><br/>
-            <input id="submitbtn" type="submit" value="Submit"/>
+            <input id="submitbtn" type="submit" value="Submit" onclick="submitpopup()"/>
             <input id="resetbtn" type="reset" value="clear all"/>
         </form>
+    </div>
+
+    <div class="popup" id="alsopopup">
+        <div class="popupok">
+            <p>thank you for submitting! we appreciate your feedback!</p>
+            <button onclick="submitpopup()">close</button>
+        </div>
     </div>
 
     <footer>

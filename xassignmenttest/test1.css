@@ -212,6 +212,13 @@ footer
 {
     height: 35px;
     filter: invert(1);
+    transition-duration: 0.2s;
+}
+
+#footer1 > img:hover
+{
+    transition-duration: 0.2s;
+    filter: invert(1) brightness(0.6) sepia(1);
 }
 
 #footer2
