@@ -35,11 +35,14 @@ a
 {
     color: black;
     text-decoration: none;
+    transition-duration: 0.2s;
 }
 
 a:hover
 {
     color: goldenrod;
+    text-decoration: underline;
+    transition-duration: 0.2s;
 }
 
 #headermain > img
@@ -57,6 +60,17 @@ a:hover
 #headernav > a
 {
     margin-left: 20px;
+}
+
+#headernav > a > img:hover
+{
+    transition-duration: 0.2s;    
+    filter: invert(1) brightness(0.6) sepia(1);
+}
+
+#headernav > a > img
+{
+    transition-duration: 0.2s;
 }
 
 #headersoc
@@ -220,6 +234,13 @@ footer
     height: 18px;
     filter: invert(1);
     padding-left: 10px;
+    transition-duration: 0.2s;    
+}
+
+#footer4 > a > img:hover
+{
+    transition-duration: 0.2s;    
+    filter: invert(1) brightness(0.6) sepia(1);
 }
 
 
