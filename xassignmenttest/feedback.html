@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Camping Detail</title>
-    <link href="Detail Activity.css" rel="stylesheet"/>
+    <title>feedback and survey</title>
+    <link href="feedback.css" rel="stylesheet"/>
     <link href="media/logothumbnail.png" rel="icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body >
+<body>
     <header>
         <a href="index.html" id="headermain">
             <img src="media/logo1.png"/>
         </a>
         <nav id="headernav">
-            <a href="index.html">Events</a>
-            <a href="Schedule.html">Schedule</a>
+            <a href="events.html">EVENTS</a>
+            <a href="Schedule.html">SCHEDULE</a>
             <a href="test2.html">Announcements</a>
             <a href="test2.html">gallery</a>
             <a href="test2.html">about us</a>
@@ -25,50 +25,28 @@
         <a href="Login.html"><img id="headeruser" src="media/guestpic.png"></a>
     </header>
 
-    <main class="main-container">
-        <div class="content-wrapper">
-            
-            <!-- Left Column: Gallery / Carousel -->
-            <div class="gallery-section">
-                <!-- Navigation Arrows -->
-                <button class="nav-arrow prev-btn" id="prevBtn">&lt;</button>
-                
-                <div class="main-image-container">
-                    <img src="media/camp.jpg" alt="Activity Image" id="mainImage" class="main-image">
-                    
-                    <!-- Thumbnails overlay / inside bottom container -->
-                    <div class="thumbnail-container">
-                        <div class="thumb-box"><img src="media/camp.jpg" alt="Image 1"></div>
-                        <div class="thumb-box"><img src="media/camping2.jpg" alt="Image 2" onclick="changeImage(this.src)"></div>
-                        <div class="thumb-box"><img src="media/camping3.jpg" alt="Image 3" onclick="changeImage(this.src)"></div>
-                        <div class="thumb-box"><img src="media/camping4.jpg" alt="Image 4" onclick="changeImage(this.src)"></div>
-                    </div>
-                </div>
+    <div class="backimg"></div>
+    <div class="maincontainer" id="test1">
+        <h1 id="feedbackmain">Give us your feedback!</h1>
+        <h2 id="feedbackmain2">Please fill in this form to share your experience with us - your insights are <span id="lol">important</span> for us!</h2><br/>
+        <form id="fbform" onsubmit="return false">
+            <label>Your Name *</label><br/><br/>
+            <input id="fbname" type="text" name="Name" placeholder="" required/><br/><br/>
+            <label>email *</label><br/><br/>
+            <input id="fbmail" type="email" name="Email" placeholder="email123@mail.com" required/><br/><br/>
+            <label>feedback</label><br/><br>
+            <textarea id="fbfb" name="Feedback" placeholder="Kindly tell us what you think!"></textarea><br/><br/>
+            <input id="submitbtn" type="submit" value="Submit" onclick="submitpopup()"/>
+            <input id="resetbtn" type="reset" value="clear all"/>
+        </form>
+    </div>
 
-                <button class="nav-arrow next-btn" id="nextBtn">&gt;</button>
-            </div>
-
-            <!-- Right Column: Activity Details -->
-            <div class="details-section">
-                <div class="title-box">
-                    <h1>Langkawi Camping Experience</h1>
-                </div>
-
-                <div class="description-box">
-                    <p>
-                        Experience an unforgettable night under the stars with our Langkawi Camping Activity! 
-                        Enjoy campfire gatherings, guided night walks, and barbecue setups prepared specifically for outdoor enthusiasts. 
-                        All camping equipment including tents and sleeping bags are provided.
-                    </p>
-                </div>
-
-                <div class="action-box">
-                    <a href="Registration.html" class="register-btn">Register Now!!</a>
-                </div>
-            </div>
-
+    <div class="popup" id="alsopopup">
+        <div class="popupok">
+            <p>thank you for submitting! we appreciate your feedback!</p>
+            <button onclick="submitpopup()">close</button>
         </div>
-    </main>
+    </div>
 
     <footer>
         <div class="footer1">
@@ -111,6 +89,7 @@
             </nav>
         </div>
     </footer>
-    <script src="Camping Detail Activity.js"></script>
+    <script src="feedback.js"></script>
+
 </body>
 </html>

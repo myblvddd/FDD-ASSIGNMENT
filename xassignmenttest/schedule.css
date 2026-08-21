@@ -1,0 +1,436 @@
+@font-face
+{
+    font-family: NewFont;
+    src: url(Bebas-Regular.ttf);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/bannerLangkawi.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); 
+    transform: scale(1.03);
+    z-index: -1;
+}
+
+/* =========================================
+   HEADER (EXACT ORIGINAL)
+   ========================================= */
+
+header
+{
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    display: flex;
+    font-family: NewFont;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: goldenrod;
+}
+
+#headermain > img
+{
+    height: 60px;
+}
+
+#headernav
+{
+    font-size: 18px;
+    margin-left: auto;
+}
+
+#headernav > a
+{
+    margin-left: 20px;
+}
+
+#headersoc
+{
+    height: 18px;
+}
+
+#headeruser
+{
+    height: 55px;
+    width: 55px;
+    margin-left: 25px;
+}
+
+/* =========================================
+   TIMETABLE & SCHEDULE LAYOUT
+   ========================================= */
+
+.schedule-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto 60px auto;
+    font-family: Arial, sans-serif;
+    flex: 1;
+}
+
+/* Top Card & Action Buttons */
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 25px 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.schedule-header .header-text h1 {
+    font-family: NewFont, sans-serif;
+    font-size: 38px;
+    color: rgb(0, 0, 122);
+    margin: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+
+.schedule-header .header-text p {
+    color: #444;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.calendar-download-group {
+    display: flex;
+    gap: 12px;
+}
+
+.download-cal-btn, .print-cal-btn {
+    font-family: NewFont, sans-serif;
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.download-cal-btn {
+    background-color: rgb(0, 0, 122);
+    color: #ffffff;
+}
+
+.download-cal-btn:hover {
+    background-color: goldenrod;
+}
+
+.print-cal-btn {
+    background-color: #f0f0f0;
+    color: #222;
+    border: 1px solid #d4d4d4;
+}
+
+.print-cal-btn:hover {
+    background-color: #e2e2e2;
+}
+
+/* Filter Controls */
+.timetable-filter-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.time-filter-btn {
+    font-family: NewFont, sans-serif;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 122);
+    background-color: #ffffff;
+    color: rgb(0, 0, 122);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.time-filter-btn:hover,
+.time-filter-btn.active {
+    background-color: rgb(0, 0, 122);
+    color: #ffffff;
+}
+
+/* Table Card Container */
+.timetable-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border: 1px solid #eef0f5;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.schedule-table thead {
+    background-color: rgb(0, 0, 122);
+    color: #ffffff;
+    font-family: NewFont, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.schedule-table th {
+    padding: 16px 20px;
+    font-weight: normal;
+}
+
+.schedule-table tbody tr {
+    border-bottom: 1px solid #eceff5;
+    transition: background-color 0.2s ease;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #f7f9ff;
+}
+
+.schedule-table td {
+    padding: 18px 20px;
+    font-size: 14px;
+    color: #333333;
+    vertical-align: middle;
+}
+
+/* Specific Table Elements */
+.date-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f4fc;
+    border-radius: 6px;
+    padding: 6px 12px;
+    width: fit-content;
+    color: rgb(0, 0, 122);
+}
+
+.date-cell .day {
+    font-family: NewFont, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.date-cell .month {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.time-cell {
+    font-weight: 600;
+    color: #222;
+}
+
+.activity-cell strong {
+    display: block;
+    font-size: 15px;
+    color: rgb(0, 0, 122);
+    margin-bottom: 4px;
+}
+
+.activity-desc {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+.badge-cat {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.camping-tag { background: #e8f5e9; color: #2e7d32; }
+.water-tag { background: #e1f5fe; color: #0277bd; }
+.adv-tag { background: #fff3e0; color: #e65100; }
+
+.table-action-link {
+    font-family: NewFont, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 122);
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.table-action-link:hover {
+    color: goldenrod;
+    transform: translateX(3px);
+}
+
+/* =========================================
+   FOOTER (EXACT ORIGINAL)
+   ========================================= */
+
+footer
+{
+    bottom: 0;
+    width: 100%;
+}
+
+.footersp > p > a {
+    color: white;
+    font-size: 20px;
+}
+
+.footersp > p > a:hover {
+    color: goldenrod;
+}
+
+#footerresource {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    padding-right: 60px;
+}
+
+#footerresource > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#footerresource > li > a:hover {
+    color: goldenrod;
+}
+
+#footersp {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footersp > li {
+    display: inline;
+}
+
+#footerapu {
+    height: 100px;
+    padding-right: 10px;
+}
+
+#footercol {
+    height: 100px;
+    width: 150px;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: 0px -10px;
+}
+
+#footermsr {
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+#footervibe {
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+    filter: invert(1);
+}
+
+#footercomp {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+#footercomp > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#footercomp > li > a:hover {
+    color: goldenrod;
+}
+
+.footer2 {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex;
+    align-items: center;
+}
+
+.footer1 {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+#footer1 > img {
+    height: 35px;
+    filter: invert(1);
+}
+
+#footer2 {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+#footer3 {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#footer4 > a > img {
+    height: 18px;
+    filter: invert(1);
+    padding-left: 10px;
+}

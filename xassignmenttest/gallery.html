@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity Timetable & Schedule</title>
+    <link href="gallery.css" rel="stylesheet"/>
+    <link href="media/logothumbnail.png" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <header>
+        <a href="index.html" id="headermain">
+            <img src="media/logo1.png"/>
+        </a>
+        <nav id="headernav">
+            <a href="events.html">EVENTS</a>
+            <a href="#schedule">SCHEDULE</a>
+            <a href="test2.html">ANNOUNCEMENTS</a>
+            <a href="test2.html">GALLERY</a>
+            <a href="test2.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/whatsapp.png"></a>
+        </nav>
+        <a href="Login.html"><img id="headeruser" src="media/guestpic.png"></a>
+    </header>
+
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <h2>LANGKAWI GALLERY    </h2>
+            <p>COME AND ENJOY THE BEAUTIFUL SCENES OF LANGKAWI!</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="beach.jpg" alt="Beautiful Beach in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="Camping2.jpg" alt="Camping in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="kayaking.jpg" alt="Kayaking in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="destination.jpg" alt="langkawi view">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+                        <!-- Gallery Item 3 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="kayaking.jpg" alt="Kayaking in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="destination.jpg" alt="langkawi view">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+                        <!-- Gallery Item 3 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="kayaking.jpg" alt="Kayaking in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="destination.jpg" alt="langkawi view">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+                        <div class="gallery-item" onclick="openModal(this)">
+                <img src="Camping2.jpg" alt="Camping in Langkawi">
+                <div class="overlay">
+                    <span>View Image</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <div class="footer1">
+            <ul id="footercomp"> Company
+                <li><br/></li>
+                <li><a href="test2.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="test2.html">FAQ</a></li>
+            </ul>
+            <div class="footersp">
+                <p><a href="sponsor.html">Sponsors and Partners</a></p>
+                <ul id="footersp">
+                    <li><img src="media/APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="media/MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="media/columbia.png" id="footercol"></li>
+                    <li><img src="media/Vibe_Logo-3879676757.png" id="footervibe"></li>
+                </ul>
+            </div>
+            <ul id="footerresource"> Resources
+                <li><br/></li>
+                <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="feedback.html">Give us your feedback!</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <a href="index.html" id="footer1">
+                <img src="media/logo2.png"/>
+            </a>
+            <p id="footer2">
+                Copyright explore langkawi 2026. All rights reserved
+            </p>
+            <p id="footer3">
+                Connect with us
+            </p>
+            <nav id="footer4">
+                <a href="https://www.instagram.com"><img src="media/instagram.png"></a>
+                <a href="https://www.instagram.com"><img src="media/tik-tok.png"></a>
+                <a href="https://www.instagram.com"><img src="media/whatsapp.png"></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html> 

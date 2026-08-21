@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity Timetable & Schedule</title>
+    <link href="schedule.css" rel="stylesheet"/>
+    <link href="media/logothumbnail.png" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <header>
+        <a href="index.html" id="headermain">
+            <img src="media/logo1.png"/>
+        </a>
+        <nav id="headernav">
+            <a href="events.html">EVENTS</a>
+            <a href="#schedule">SCHEDULE</a>
+            <a href="test2.html">ANNOUNCEMENTS</a>
+            <a href="test2.html">GALLERY</a>
+            <a href="test2.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/whatsapp.png"></a>
+        </nav>
+        <a href="Login.html"><img id="headeruser" src="media/guestpic.png"></a>
+    </header>
+
+    <!-- MAIN SCHEDULE & TIMETABLE CONTENT -->
+    <main id="schedule" class="schedule-container">
+        <!-- Page Intro & Download Bar -->
+        <section class="schedule-header">
+            <div class="header-text">
+                <h1>Activity Timetable & Schedule</h1>
+                <p>Track dates, times, and gathering checkpoints. Filter by activity type or download the schedule to your calendar.</p>
+            </div>
+            
+            <div class="calendar-download-group">
+                <button id="downloadCalendarBtn" class="download-cal-btn">
+                    &#128197; Add to Calendar (.ICS)
+                </button>
+                <button id="printScheduleBtn" class="print-cal-btn">
+                    &#128424; Print Schedule
+                </button>
+            </div>
+        </section>
+
+        <!-- Filter Controls -->
+        <div class="timetable-filter-bar">
+            <button class="time-filter-btn active" data-category="all">All Activities</button>
+            <button class="time-filter-btn" data-category="camping">Camping</button>
+            <button class="time-filter-btn" data-category="water-sports">Water Sports</button>
+            <button class="time-filter-btn" data-category="adventure">Adventure & Trekking</button>
+        </div>
+
+        <!-- Timetable Wrapper -->
+        <section class="timetable-card">
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Category</th>
+                            <th>Location / Checkpoint</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="timetableBody">
+                        
+                        <!-- Row 1 -->
+                        <tr class="schedule-row" data-category="camping">
+                            <td>
+                                <div class="date-cell">
+                                    <span class="day">22</span>
+                                    <span class="month">AUG 2026</span>
+                                </div>
+                            </td>
+                            <td class="time-cell">04:00 PM - 10:00 AM</td>
+                            <td class="activity-cell">
+                                <strong>Camping in Langkawi</strong>
+                                <span class="activity-desc">Beachside bonfire, stargazing & outdoor cooking</span>
+                            </td>
+                            <td><span class="badge-cat camping-tag">Camping</span></td>
+                            <td>Pasir Tengkorak Beach</td>
+                            <td>
+                                <a href="Camping Detail Activity.html" class="table-action-link">Details &rarr;</a>
+                            </td>
+                        </tr>
+
+                        <!-- Row 2 -->
+                        <tr class="schedule-row" data-category="water-sports">
+                            <td>
+                                <div class="date-cell">
+                                    <span class="day">23</span>
+                                    <span class="month">AUG 2026</span>
+                                </div>
+                            </td>
+                            <td class="time-cell">09:30 AM - 01:30 PM</td>
+                            <td class="activity-cell">
+                                <strong>Mangrove Kayaking</strong>
+                                <span class="activity-desc">Guided tour through bat sanctuaries & limestone caves</span>
+                            </td>
+                            <td><span class="badge-cat water-tag">Water Sports</span></td>
+                            <td>Kilim Geoforest Park</td>
+                            <td>
+                                <a href="Kayaking Detail Activity.html" class="table-action-link">Details &rarr;</a>
+                            </td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="schedule-row" data-category="adventure">
+                            <td>
+                                <div class="date-cell">
+                                    <span class="day">23</span>
+                                    <span class="month">AUG 2026</span>
+                                </div>
+                            </td>
+                            <td class="time-cell">08:00 AM - 12:00 PM</td>
+                            <td class="activity-cell">
+                                <strong>Jungle Trekking</strong>
+                                <span class="activity-desc">Ancient rainforest trails to mountain viewpoints</span>
+                            </td>
+                            <td><span class="badge-cat adv-tag">Adventure</span></td>
+                            <td>Gunung Raya Reserve</td>
+                            <td>
+                                <a href="Jungle Trekking Detail Activity.html" class="table-action-link">Details &rarr;</a>
+                            </td>
+                        </tr>
+
+                        <!-- Row 4 -->
+                        <tr class="schedule-row" data-category="adventure">
+                            <td>
+                                <div class="date-cell">
+                                    <span class="day">05</span>
+                                    <span class="month">SEP 2026</span>
+                                </div>
+                            </td>
+                            <td class="time-cell">10:00 AM - 01:00 PM</td>
+                            <td class="activity-cell">
+                                <strong>Ziplining Adventure</strong>
+                                <span class="activity-desc">Canopy zip over Seven Wells waterfalls</span>
+                            </td>
+                            <td><span class="badge-cat adv-tag">Adventure</span></td>
+                            <td>Telaga Tujuh Canopy</td>
+                            <td>
+                                <a href="Ziplining Detail Activity.html" class="table-action-link">Details &rarr;</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <ul id="footercomp"> Company
+                <li><br/></li>
+                <li><a href="test2.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="test2.html">FAQ</a></li>
+            </ul>
+            <div class="footersp">
+                <p><a href="sponsor.html">Sponsors and Partners</a></p>
+                <ul id="footersp">
+                    <li><img src="media/APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="media/MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="media/columbia.png" id="footercol"></li>
+                    <li><img src="media/Vibe_Logo-3879676757.png" id="footervibe"></li>
+                </ul>
+            </div>
+            <ul id="footerresource"> Resources
+                <li><br/></li>
+                <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="feedback.html">Give us your feedback!</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <a href="index.html" id="footer1">
+                <img src="media/logo2.png"/>
+            </a>
+            <p id="footer2">
+                Copyright explore langkawi 2026. All rights reserved
+            </p>
+            <p id="footer3">
+                Connect with us
+            </p>
+            <nav id="footer4">
+                <a href="https://www.instagram.com"><img src="media/instagram.png"></a>
+                <a href="https://www.instagram.com"><img src="media/tik-tok.png"></a>
+                <a href="https://www.instagram.com"><img src="media/whatsapp.png"></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="schedule.js"></script>
+</body>
+</html> 

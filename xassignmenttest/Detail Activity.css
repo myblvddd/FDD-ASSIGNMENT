@@ -1,0 +1,367 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-family: NewFont, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('media/bannerLangkawi.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); 
+    z-index: -1;
+}
+
+/* ==========================================
+   MAIN CONTENT STYLES
+   ========================================== */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 200px);
+}
+
+.content-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* --- Left Column: Gallery / Slider --- */
+.gallery-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.main-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 100%;
+    height: 320px; /* Reduced from 320px */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #333;
+}
+
+/* Navigation Arrows (< and >) */
+.nav-arrow {
+    background: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.nav-arrow:hover {
+    color: goldenrod;
+    transform: scale(1.2);
+}
+
+/* Thumbnail Images Container (Placed below the main image) */
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Reduced gap to fit 4 thumbnails easily */
+    margin-top: 12px;
+    width: 100%;
+}
+
+.thumb-box {
+    width: 65px; /* Sized to accommodate 4 thumbnails side-by-side */
+    height: 45px;
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+.thumb-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumb-box:hover {
+    transform: scale(1.05);
+    border-color: rgb(0, 0, 122);
+}
+
+/* --- Right Column: Activity Details --- */
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.title-box {
+    border: 2px solid #333;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 28px;
+    color: rgb(0, 0, 122);
+    letter-spacing: 1px;
+}
+
+.description-box {
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+.description-box p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.action-box {
+    text-align: center;
+}
+
+.register-btn {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #333;
+    background-color: rgb(0, 0, 122);
+    color: white;
+    padding: 12px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: goldenrod;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* ==========================================
+   HEADER AND FOOTER STYLES
+   ========================================== */
+
+header {
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    display: flex;
+    font-family: NewFont;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+#headermain > img {
+    height: 60px;
+}
+
+#headernav {
+    font-size: 18px;
+    margin-left: auto;
+}
+
+#headernav > a {
+    margin-left: 20px;
+}
+
+#headersoc {
+    height: 18px;
+}
+
+#headeruser {
+    height: 55px;
+    width: 55px;
+    margin-left: 25px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+.footersp > p > a {
+    color: white;
+    font-size: 20px;
+}
+
+.footersp > p > a:hover {
+    color: goldenrod;
+}
+
+#footerresource {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    padding-right: 60px;
+}
+
+#footerresource > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#footerresource > li > a:hover {
+    color: goldenrod;
+}
+
+#footersp {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footersp > li {
+    display: inline;
+}
+
+#footerapu {
+    height: 100px;
+    padding-right: 10px;
+}
+
+#footercol {
+    height: 100px;
+    width: 150px;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: 0px -10px;
+}
+
+#footermsr {
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+#footervibe {
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+    filter: invert(1);
+}
+
+#footercomp {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+#footercomp > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#footercomp > li > a:hover {
+    color: goldenrod;
+}
+
+.footer2 {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex;
+    align-items: center;
+}
+
+.footer1 {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+#footer1 > img {
+    height: 35px;
+    filter: invert(1);
+}
+
+#footer2 {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+#footer3 {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#footer4 > a > img {
+    height: 18px;
+    filter: invert(1);
+    padding-left: 10px;
+}
+
+@font-face {
+    font-family: NewFont;
+    src: url(Bebas-Regular.ttf);
+}

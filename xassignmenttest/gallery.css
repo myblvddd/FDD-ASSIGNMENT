@@ -1,0 +1,356 @@
+@font-face
+{
+    font-family: NewFont;
+    src: url(Bebas-Regular.ttf);
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('media/bannerLangkawi.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(5px); 
+    transform: scale(1.03);
+    z-index: -1;
+}
+
+/* =========================================
+   HEADER (EXACT ORIGINAL)
+   ========================================= */
+
+header
+{
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    display: flex;
+    font-family: NewFont;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: goldenrod;
+}
+
+#headermain > img
+{
+    height: 60px;
+}
+
+#headernav
+{
+    font-size: 18px;
+    margin-left: auto;
+}
+
+#headernav > a
+{
+    margin-left: 20px;
+}
+
+#headersoc
+{
+    height: 18px;
+}
+
+#headeruser
+{
+    height: 55px;
+    width: 55px;
+    margin-left: 25px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #eaeaea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gallery Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #eaeaea;
+    font-family: NewFont;
+}
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-header h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gallery-header p {
+    color: #0c00e7;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 210px;
+    padding: 10px;
+    gap: 10px; 
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    z-index: 10;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery-item {
+        height: 300px; 
+    }
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.95); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    border: 2px solid #0539e5;
+    box-shadow: 0 0 20px rgba(138, 3, 3, 0.3);
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #0c00e7;
+}
+
+
+/* =========================================
+   FOOTER (EXACT ORIGINAL)
+   ========================================= */
+
+footer
+{
+    bottom: 0;
+    width: 100%;
+}
+
+.footersp > p > a {
+    color: white;
+    font-size: 20px;
+}
+
+.footersp > p > a:hover {
+    color: goldenrod;
+}
+
+#footerresource {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+    padding-right: 60px;
+}
+
+#footerresource > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#footerresource > li > a:hover {
+    color: goldenrod;
+}
+
+#footersp {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footersp > li {
+    display: inline;
+}
+
+#footerapu {
+    height: 100px;
+    padding-right: 10px;
+}
+
+#footercol {
+    height: 100px;
+    width: 150px;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: 0px -10px;
+}
+
+#footermsr {
+    height: 90px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+#footervibe {
+    height: 80px;
+    width: 120px;
+    object-fit: contain;
+    padding-right: 10px;
+    filter: invert(1);
+}
+
+#footercomp {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+#footercomp > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#footercomp > li > a:hover {
+    color: goldenrod;
+}
+
+.footer2 {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex;
+    align-items: center;
+}
+
+.footer1 {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(0, 0, 122);
+    font-family: NewFont;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+#footer1 > img {
+    height: 35px;
+    filter: invert(1);
+}
+
+#footer2 {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+#footer3 {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+#footer4 > a > img {
+    height: 18px;
+    filter: invert(1);
+    padding-left: 10px;
+}

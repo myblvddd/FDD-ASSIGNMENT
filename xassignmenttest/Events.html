@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upcoming Events & Activities</title>
+    <link href="events.css" rel="stylesheet"/>
+    <link href="media/logothumbnail.png" rel="icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <header>
+        <a href="index.html" id="headermain">
+            <img src="media/logo1.png"/>
+        </a>
+        <nav id="headernav">
+            <a href="events.html">EVENTS</a>
+            <a href="Schedule.html">SCHEDULE</a>
+            <a href="test2.html">ANNOUNCEMENTS</a>
+            <a href="test2.html">GALLERY</a>
+            <a href="test2.html">ABOUT US</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/instagram.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/tik-tok.png"></a>
+            <a href="https://www.instagram.com"><img id="headersoc" src="media/whatsapp.png"></a>
+        </nav>
+        <a href="Login.html"><img id="headeruser" src="media/guestpic.png"></a>
+    </header>
+
+    <!-- MAIN EVENTS CONTENT -->
+    <main class="events-container">
+        <section class="events-header">
+            <h1>Upcoming Events & Activities</h1>
+            <p>Discover exciting outdoor adventures and eco-tours in Langkawi. Click on any event to view full details and book your slot.</p>
+        </section>
+
+        <!-- Category Filter Buttons -->
+        <div class="events-filter-bar">
+            <button class="event-filter-btn active" data-category="all">All Events</button>
+            <button class="event-filter-btn" data-category="camping">Camping</button>
+            <button class="event-filter-btn" data-category="water-sports">Water Sports</button>
+            <button class="event-filter-btn" data-category="adventure">Adventure & Trekking</button>
+        </div>
+
+        <!-- Events Grid -->
+        <section class="events-grid">
+
+            <!-- Event 1: Camping in Langkawi -->
+            <a href="Camping Detail Activity.html" class="event-card" data-category="camping">
+                <div class="card-image-wrapper">
+                    <img src="media/camp.jpg" alt="Camping in Langkawi" class="card-thumbnail"/>
+                    <span class="card-badge">Outdoor Camp</span>
+                </div>
+                <div class="card-body">
+                    <div class="date-badge">
+                        <span class="day">22</span>
+                        <span class="month">AUG 2026</span>
+                    </div>
+                    <h3>Camping in Langkawi</h3>
+                    <p>Overnight beachside camping experience with bonfire setups, stargazing, and outdoor cooking amenities.</p>
+                    
+                    <div class="event-meta-info">
+                        <span class="meta-time">04:00 PM - 10:00 AM (Next Day)</span>
+                        <span class="meta-location">Pasir Tengkorak Beach</span>
+                    </div>
+
+                    <div class="card-footer-action">
+                        <span class="action-text">View Event &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Event 2: Mangrove Kayaking -->
+            <a href="Kayaking Detail Activity.html" class="event-card" data-category="water-sports">
+                <div class="card-image-wrapper">
+                    <img src="media/kayaking.jpg" alt="Mangrove Kayaking" class="card-thumbnail"/>
+                    <span class="card-badge">Water Sports</span>
+                </div>
+                <div class="card-body">
+                    <div class="date-badge">
+                        <span class="day">23</span>
+                        <span class="month">AUG 2026</span>
+                    </div>
+                    <h3>Mangrove Kayaking</h3>
+                    <p>Guided kayaking adventure through limestone caves, bat sanctuaries, and coastal mangrove waterways.</p>
+                    
+                    <div class="event-meta-info">
+                        <span class="meta-time">09:30 AM - 01:30 PM</span>
+                        <span class="meta-location">Kilim Geoforest Park</span>
+                    </div>
+
+                    <div class="card-footer-action">
+                        <span class="action-text">View Event &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Event 3: Jungle Trekking -->
+            <a href="Trekking Detail Activity.html" class="event-card" data-category="adventure">
+                <div class="card-image-wrapper">
+                    <img src="media/trekking.jpg" alt="Jungle Trekking" class="card-thumbnail"/>
+                    <span class="card-badge">Adventure</span>
+                </div>
+                <div class="card-body">
+                    <div class="date-badge">
+                        <span class="day">23</span>
+                        <span class="month">AUG 2026</span>
+                    </div>
+                    <h3>Jungle Trekking</h3>
+                    <p>Scenic guided rainforest trek through ancient trails leading up to panoramic mountain viewpoints and waterfalls.</p>
+                    
+                    <div class="event-meta-info">
+                        <span class="meta-time">08:00 AM - 12:00 PM</span>
+                        <span class="meta-location">Gunung Raya Reserve</span>
+                    </div>
+
+                    <div class="card-footer-action">
+                        <span class="action-text">View Event &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Event 4: Ziplining -->
+            <a href="Ziplining Detail Activity.html" class="event-card" data-category="adventure">
+                <div class="card-image-wrapper">
+                    <img src="media/zipline.jpg" alt="Ziplining Adventure" class="card-thumbnail"/>
+                    <span class="card-badge">Adventure</span>
+                </div>
+                <div class="card-body">
+                    <div class="date-badge">
+                        <span class="day">05</span>
+                        <span class="month">SEP 2026</span>
+                    </div>
+                    <h3>Ziplining Adventure</h3>
+                    <p>High-speed canopy zip adventure offering stunning aerial views over the Seven Wells waterfall and rainforest canopy.</p>
+                    
+                    <div class="event-meta-info">
+                        <span class="meta-time">10:00 AM - 01:00 PM</span>
+                        <span class="meta-location">Telaga Tujuh Canopy</span>
+                    </div>
+
+                    <div class="card-footer-action">
+                        <span class="action-text">View Event &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <ul id="footercomp"> Company
+                <li><br/></li>
+                <li><a href="test2.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="test2.html">FAQ</a></li>
+            </ul>
+            <div class="footersp">
+                <p><a href="sponsor.html">Sponsors and Partners</a></p>
+                <ul id="footersp">
+                    <li><img src="media/APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="media/MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="media/columbia.png" id="footercol"></li>
+                    <li><img src="media/Vibe_Logo-3879676757.png" id="footervibe"></li>
+                </ul>
+            </div>
+            <ul id="footerresource"> Resources
+                <li><br/></li>
+                <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="feedback.html">Give us your feedback!</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <a href="index.html" id="footer1">
+                <img src="media/logo2.png"/>
+            </a>
+            <p id="footer2">
+                Copyright explore langkawi 2026. All rights reserved
+            </p>
+            <p id="footer3">
+                Connect with us
+            </p>
+            <nav id="footer4">
+                <a href="https://www.instagram.com"><img src="media/instagram.png"></a>
+                <a href="https://www.instagram.com"><img src="media/tik-tok.png"></a>
+                <a href="https://www.instagram.com"><img src="media/whatsapp.png"></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>
