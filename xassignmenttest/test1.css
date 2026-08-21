@@ -41,7 +41,6 @@ a
 a:hover
 {
     color: goldenrod;
-    text-decoration: underline;
     transition-duration: 0.2s;
 }
 
