@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Activity Timetable & Schedule</title>
-    <link href="schedule.css" rel="stylesheet"/>
+    <title>FAQ</title>
+    <link href="faq.css" rel="stylesheet"/>
     <link href="media/logothumbnail.png" rel="icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
@@ -25,79 +27,122 @@
         <a href="Login.html"><img id="headeruser" src="media/guestpic.png"></a>
     </header>
 
-<!-- FAQ-->
-
-<div class="faq-container">
-  <h2>Frequently asked questions About<br>Langkawi.</h2>
-
-  <!-- soalan 1-->
-  <div class="accordion-item">
-    <button class="accordion-header active">
-      Isi
-      <span class="icon">∨</span>
-    </button>
-    <div class="accordion-content">
-      <p>sat.</p>
+<section class="faq-section">
+    <div class="faq-header">
+        <h2>FAQ</h2>
+        <p>Frequently Asked Questions</p>
     </div>
-  </div>
 
-  <!-- soalan 2 -->
-  <div class="accordion-item">
-    <button class="accordion-header">
-      isi
-      <span class="icon">∨</span>
-    </button>
-    <div class="accordion-content">
-      <p></p>sat.</p>
+    <div class="faq-container">
+        <!-- Soalan 1 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                What are the most popular activities in Langkawi?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Visitors can enjoy jungle trekking, mangrove kayaking, ziplining,
+                   camping, and more.</p>
+            </div>
+        </div>
+
+        <!-- Soalan 2 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                Do I need to book activities in advance?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>It is recommended to book in advance, especially during weekends,
+                  public holidays, and peak travel seasons.</p>
+            </div>
+        </div>
+
+        <!-- Soalan 3 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                What should I bring for outdoor activities?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Bring comfortable clothing, sunscreen, a hat, sunglasses, drinking water, and 
+                  a waterproof bag for water-based activities.</p>
+            </div>
+        </div>
+
+        <!-- Soalan 4 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                Can I cancel or reschedule my booking?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Cancellation and rescheduling policies depend on the tour operator. 
+                Please check the terms before confirming your booking.</p>
+            </div>
+        </div>
+
+        <!-- Soalan 5 -->
+                 <div class="faq-item">
+            <button class="faq-question">
+                How can I contact customer support for activity inquiries?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>You can reach us through the Contact Us page, email, or WhatsApp for 
+                  assistance with bookings and activity information.</p>
+            </div>
+        </div>
+</section>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="expandedImg">
+        <div id="caption"></div>
     </div>
-  </div>
 
-  <!-- soalan 3 -->
-  <div class="accordion-item">
-    <button class="accordion-header">
-      isi
-      <span class="icon">∨</span>
-    </button>
-    <div class="accordion-content">
-      <p>sat.</p>
-    </div>
-  </div>
-
-  <!-- soalan 4 -->
-  <div class="accordion-item">
-    <button class="accordion-header">
-      isi
-      <span class="icon">∨</span>
-    </button>
-    <div class="accordion-content">
-      <p>sat.</p>
-    </div>
-  </div>
-
-  <!-- soalan 5 -->
-  <div class="accordion-item">
-    <button class="accordion-header">
-     isi
-      <span class="icon">∨</span>
-    </button>
-    <div class="accordion-content">
-      <p>sat.</p>
-    </div>
-  </div>
-
-  <!-- soalan 6 -->
-  <div class="accordion-item">
-    <button class="accordion-header">
-     sis
-      <span class="icon">∨</span>
-    </button>
-    <div class="accordion-content">
-      <p>Adey</p>
-    </div>
-  </div>
-
-</div>
-
+    <footer>
+        <div class="footer1">
+            <ul id="footercomp"> Company
+                <li><br/></li>
+                <li><a href="test2.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="test2.html">FAQ</a></li>
+            </ul>
+            <div class="footersp">
+                <p><a href="sponsor.html">Sponsors and Partners</a></p>
+                <ul id="footersp">
+                    <li><img src="media/APU-Logo_Final_Vertical_V1_HR1-copy-2739783303.png" id="footerapu"></li>
+                    <li><img src="media/MSR_logo_1-2395494865.png" id="footermsr"></li>
+                    <li><img src="media/columbia.png" id="footercol"></li>
+                    <li><img src="media/Vibe_Logo-3879676757.png" id="footervibe"></li>
+                </ul>
+            </div>
+            <ul id="footerresource"> Resources
+                <li><br/></li>
+                <li><a href="test2.html">Download Resources</a></li>
+                <li><br/></li>
+                <li><a href="feedback.html">Give us your feedback!</a></li>
+            </ul>
+        </div>
+        <div class="footer2">
+            <a href="index.html" id="footer1">
+                <img src="media/logo2.png"/>
+            </a>
+            <p id="footer2">
+                Copyright explore langkawi 2026. All rights reserved
+            </p>
+            <p id="footer3">
+                Connect with us
+            </p>
+            <nav id="footer4">
+                <a href="https://www.instagram.com"><img src="media/instagram.png"></a>
+                <a href="https://www.instagram.com"><img src="media/tik-tok.png"></a>
+                <a href="https://www.instagram.com"><img src="media/whatsapp.png"></a>
+            </nav>
+        </div>
+    </footer>
 <script src="faq.js"></script>
 
 </body>

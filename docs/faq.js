@@ -1,24 +1,15 @@
-const accordionHeaders = document.querySelectorAll('.accordion-header');
+const faqItems = document.querySelectorAll('.faq-item');
 
-  function openAccordion(content) {
-    content.style.maxHeight = content.scrollHeight + "px";
-  }
+faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    
+    questionBtn.addEventListener('click', () => {
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
 
-  const initialOpenHeader = document.querySelector('.accordion-header.active');
-  if (initialOpenHeader) {
-      openAccordion(initialOpenHeader.nextElementSibling);
-  }
-
-  accordionHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      this.classList.toggle('active');
-
-      const content = this.nextElementSibling;
-
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null; // Collapse
-      } else {
-        openAccordion(content); // Expand
-      }
+        item.classList.toggle('active');
     });
-  });
+});
