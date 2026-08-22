@@ -7,10 +7,10 @@ body
 .backimg
 {
     background-image: url(media/bannerLangkawi.jpg);
-    background-size: 130% 100%;
+    background-size: 200% 100%;
     background-position: center center;
     width: 100%;
-    height: 130%;
+    height: 200%;
     z-index: -1;
     position: absolute;
     filter: blur(5px);

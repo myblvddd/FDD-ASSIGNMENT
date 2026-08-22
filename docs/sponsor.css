@@ -7,9 +7,9 @@ body
 .backimg
 {
     background-image: url(media/bannerLangkawi.jpg);
-    background-size: 250% 100%;
+    background-size: 310% 100%;
     width: 100%;
-    height: 250%;
+    height: 310%;
     z-index: -1;
     position: absolute;
     filter: blur(5px);
@@ -113,39 +113,41 @@ body
 
 #apusp
 {
-    height: 300px;
+    height: 250px;
     margin-top: -40px;
+    
 }
 
 #apusp1
 {
-    height: 160px;
+    height: 145px;
     margin-bottom: 30px;
+   
 }
 
 #apusp3
 {
-    height: 280px;
+    height: 230px;
     margin-bottom: -40px;
     margin-top: -40px;
 }
 
 #apusp4
 {
-    height: 180px;
+    height: 130px;
     filter: invert(1);
     margin-bottom: 50px;
 }
 
 #apusp5
 {
-    height: 100px;
+    height: 70px;
     margin-bottom: 30px;
 }
 
 #apusp6
 {
-    height: 180px;
+    height: 130px;
     margin-bottom: 40px;
 }
 
