@@ -35,56 +35,6 @@ body::before {
    HEADER (EXACT MATCH TO INDEX.CSS)
    ========================================= */
 
-header
-{
-    padding: 10px 50px 10px 50px;
-    background-color: white;
-    display: flex;
-    font-family: NewFont;
-    align-items: center;
-    top: 0;
-    justify-content: space-between;
-}
-
-a
-{
-    color: black;
-    text-decoration: none;
-}
-
-a:hover
-{
-    color: goldenrod;
-}
-
-#headermain > img
-{
-    height: 60px;
-}
-
-#headernav
-{
-    font-size: 18px;
-    margin-left: auto;
-}
-
-#headernav > a
-{
-    margin-left: 20px;
-}
-
-#headersoc
-{
-    height: 18px;
-}
-
-#headeruser
-{
-    height: 55px;
-    width: 55px;
-    margin-left: 25px;
-}
-
 /* =========================================
    DOWNLOAD RESOURCES CONTENT
    ========================================= */
@@ -270,11 +220,77 @@ a:hover
    FOOTER (EXACT MATCH TO INDEX.CSS)
    ========================================= */
 
+header
+{
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    display: flex;
+    font-family: NewFont;
+    align-items: center;
+    top: 0;
+    justify-content: space-between;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+a:hover
+{
+    color: goldenrod;
+    transition-duration: 0.2s;
+}
+
+#headermain > img
+{
+    height: 60px;
+}
+
+
+#headernav
+{
+    font-size: 18px;
+    margin-left: auto;
+}
+
+#headernav > a
+{
+    margin-left: 20px;
+}
+
+#headernav > a > img:hover
+{
+    transition-duration: 0.2s;    
+    filter: invert(1) brightness(0.6) sepia(1);
+}
+
+#headernav > a > img
+{
+    transition-duration: 0.2s;
+}
+
+#headersoc
+{
+    height: 18px;
+}
+
+#headeruser
+{
+    height: 55px;
+    width: 55px;
+    margin-left: 25px;
+}
+
 footer
 {
     bottom: 0;
     width: 100%;
 }
+
+
 
 .footersp > p > a
 {
@@ -305,11 +321,14 @@ footer
     color: goldenrod;
 }
 
+
 #footersp
 {
     list-style-type: none;
     padding: 0;
 }
+
+
 
 #footersp > li
 {
@@ -330,6 +349,7 @@ footer
     object-fit: cover;
     object-position: 0px -10px;
 }
+
 
 #footermsr
 {
@@ -363,7 +383,7 @@ footer
 
 #footercomp > li > a:hover
 {
-    color:goldenrod;
+    color:goldenrod
 }
 
 .footer2
@@ -385,10 +405,19 @@ footer
     justify-content: space-between;
 }
 
+
+
 #footer1 > img
 {
     height: 35px;
     filter: invert(1);
+    transition-duration: 0.2s;
+}
+
+#footer1 > img:hover
+{
+    transition-duration: 0.2s;
+    filter: invert(1) brightness(0.6) sepia(1);
 }
 
 #footer2
@@ -411,4 +440,23 @@ footer
     height: 18px;
     filter: invert(1);
     padding-left: 10px;
+    transition-duration: 0.2s;    
+}
+
+#footer4 > a > img:hover
+{
+    transition-duration: 0.2s;    
+    filter: invert(1) brightness(0.6) sepia(1);
+}
+
+
+@font-face
+{
+    font-family: NewFont;
+    src: url(Bebas-Regular.ttf);
+}
+
+.footersp
+{
+    margin-top: 4px;
 }

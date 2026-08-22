@@ -255,3 +255,8 @@ footer
     font-family: NewFont;
     src: url(Bebas-Regular.ttf);
 }
+
+.footersp
+{
+    margin-top: 4px;
+}
