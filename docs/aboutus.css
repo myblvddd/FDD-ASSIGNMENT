@@ -196,7 +196,6 @@ p
             width: 100%;
             height: 100%;
             margin: 0;
-            border-radius: 0px 10px 10px 0px;
             filter: brightness(0.7);
             transition-duration: 0.5s;
         }
@@ -223,6 +222,7 @@ p
     font-family: NewFont;
     margin: 0;
 }
+
 
 
 .slideshow-container
