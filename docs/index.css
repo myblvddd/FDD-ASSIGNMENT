@@ -49,12 +49,12 @@ section{
 }
 .events {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Mobile default */
+    grid-template-columns: repeat(1, 1fr);
     gap: 24px;
     padding: 20px 50px;
 }
 
-/* Responsive Grid: 2 columns on tablet, 4 columns on desktop */
+
 @media (min-width: 768px) {
     .events {
         grid-template-columns: repeat(2, 1fr);
@@ -85,19 +85,34 @@ section{
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
-/* Image Section */
+/* Image Section & Slideshow Styles */
 .event-image {
     display: block;
     width: 100%;
 }
 
-.event-image .image {
+.slideshow-container {
+    position: relative;
     width: 100%;
-    aspect-ratio: 5 / 3; /* Matches the 400x240 resolution perfectly */
+    aspect-ratio: 5 / 3;
     background-color: #f4f4f4;
+}
+
+.slide.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.image.active {
+    opacity: 1;
 }
 
 /* Body Content */
@@ -105,14 +120,14 @@ section{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Ensures buttons/meta align at the bottom */
+    flex-grow: 1;
 }
 
 /* Title Styling */
 .event-content .title {
     font-size: 1.15rem;
     font-weight: 500;
-    color: #213059; /* Dark navy blue from the image */
+    color: #213059;
     text-decoration: none;
     line-height: 1.4;
     margin-bottom: 12px;
@@ -120,27 +135,27 @@ section{
 }
 
 .event-content .title:hover {
-    color: #d11e33; /* Slight hover effect */
+    color: #d11e33;
 }
 
 /* Location Text and Icon */
 .event-content .location {
     font-size: 0.9rem;
-    color: #d11e33; /* Red color matching the pin and text */
+    color: #d11e33;
     margin-bottom: 25px;
-    flex-grow: 1; /* Pushes the meta footer to the bottom of the card */
+    flex-grow: 1;
     display: flex;
     align-items: flex-start;
-    gap: 8px; /* Space between icon and text */
+    gap: 8px; 
 }
 
 .event-content .location i {
-    margin-top: 3px; /* Aligns the icon with the first line of text */
+    margin-top: 3px;
 }
 
 /* Card Footer (Date and Status) */
 .event-meta {
-    border-top: 1px solid #f0f0f0; /* Light gray divider line */
+    border-top: 1px solid #f0f0f0; 
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
@@ -157,8 +172,8 @@ section{
 
 .event-meta .status {
     font-size: 1.25rem;
-    color: #213059; /* Dark navy blue ticket icon */
-    transform: rotate(-15deg); /* Matches the slightly angled ticket in the image */
+    color: #213059; 
+    transform: rotate(-15deg);
 }
 
 /* Show More Button Alignment */
